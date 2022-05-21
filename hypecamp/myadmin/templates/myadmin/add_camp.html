@@ -1,0 +1,26 @@
+{% extends 'myadmin/base.html' %}
+
+
+{% block content %}
+<div class="form-content">
+    <form>
+      <div class="camp-form-content">
+        <div class="row g-3">
+          <div class="col-12">
+            <label for="inputName" class="form-label">Наименование</label>
+            <input type="text" class="form-control" id="inputName" aria-describedby="nameHelp" required>
+            <div id="nameHelp" class="form-text">Укажите наименование организации</div>
+          </div>
+          <div class="col-12">
+            <label for="inputDescription" class="form-label">Описание</label>
+            <textarea class="form-control" id="inputDescription" aria-describedby="descriptionHelp" rows="4" required></textarea>
+            <div id="descriptionHelp" class="form-text">Опишите организацию</div>
+          </div>  
+        </div>
+      </div>
+      <div class="col-12 top-margin bottom-margin">
+        <button type="submit" class="btn btn-primary">Сохранить</button>
+      </div>
+    </form>
+</div>
+{% endblock %}
